@@ -1,0 +1,15 @@
+{
+  "name": "masterhost",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "account": "npx tailwindcss -i ./tailwindcss/account.css -o ./src/assets/css/account.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
