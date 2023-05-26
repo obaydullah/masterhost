@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "account": "npx tailwindcss -i ./tailwindcss/account.css -o ./src/assets/css/account.css --watch"
+    "account": "npx tailwindcss -i ./tailwindcss/account.css -o ./src/assets/css/account.css --watch",
+    "component": "npx tailwindcss -i ./tailwindcss/component.css -o ./src/assets/css/component.css --watch"
   },
   "keywords": [],
   "author": "",
