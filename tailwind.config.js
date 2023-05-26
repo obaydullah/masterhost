@@ -4,7 +4,7 @@
 var textBase = "#4b5563";
 var textMuted = "#6b7280";
 var textBaseInverted = "#ffffff";
-var textMutedInverted = "rgba(255, 255, 255, 0.9";
+var textMutedInverted = "rgba(255, 255, 255, 0.9)";
 var textMessage = "#10b981";
 var textHover = "#374151";
 

@@ -77,4 +77,19 @@
     hover:border-skin-base
     hover:text-skin-base-inverted;
   }
+  .filled__btn {
+    @apply h-12
+    px-4
+    flex
+    items-center
+    justify-center
+    bg-skin-button-base
+    /* text-skin-muted-inverted */
+    text-skin-muted-inverted
+    font-medium
+    rounded-md
+    transition
+    hover:bg-skin-button-base-hover
+    hover:text-skin-base-inverted;
+  }
 }
