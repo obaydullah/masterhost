@@ -50,8 +50,9 @@
         <!-- form start  -->
         <div class="w-full sm:max-w-lg mx-auto mt-32" id="signup">
           <form data-multi-step id="signup-form" name="signup-form" method="post" class="w-full p-5">
+            <!-- step one  -->
             <div class="step-1" data-step>
-              <div class="progress-bar flex justify-between gap-10 mb-6">
+              <div class="flex justify-between gap-10 mb-6">
                 <p class="bg-skin-button-base text-xs font-bold text-skin-base-inverted w-6 h-6 grid place-items-center rounded-full">1</p>
                 <p class="bg-skin-button-inverted-hover text-xs font-bold text-skin-base w-6 h-6 grid place-items-center rounded-full">2</p>
                 <p class="bg-skin-button-inverted-hover text-xs font-bold text-skin-base w-6 h-6 grid place-items-center rounded-full">3</p>
@@ -88,6 +89,118 @@
 
               <div class="field mt-9">
                 <button data-next class="@apply filled__btn w-full" type="button">continue</button>
+              </div>
+            </div>
+
+            <!-- step two  -->
+            <div class="step-2" data-step>
+              <div class="flex justify-between gap-10 mb-6">
+                <p class="material-icons bg-skin-button-base !text-xs !font-bold text-skin-base-inverted w-6 h-6 !grid place-items-center rounded-full">check</p>
+                <p class="bg-skin-button-base text-xs font-bold text-skin-base-inverted w-6 h-6 grid place-items-center rounded-full">2</p>
+                <p class="bg-skin-button-inverted-hover text-xs font-bold text-skin-base w-6 h-6 grid place-items-center rounded-full">3</p>
+              </div>
+
+              <h5 class="text-2xl font-medium text-skin-base mb-2">Create Account</h5>
+              <p class="text-skin-base mb-6">Enter your information to continue.</p>
+
+              <div class="phone-field">
+                <label for="phone-input" class="text-sm block mb-1 text-skin-muted">Phone Number <span class="text-red-700">*</span></label>
+                <div class="flex gap-2 mb-5">
+                  <div class="field">
+                    <input class="intl-input !w-0 !p-0 !border-transparent !-z-10" name="intl-input" id="intl-input" type="tel" />
+                  </div>
+                  <div class="field w-full">
+                    <input type="tel" id="phone-input" name="phone-input" class="w-full @apply input__elem" value="" placeholder="Phone Number" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="field mb-5">
+                <label for="address1-input" class="text-sm block mb-1 text-skin-muted">Address <span class="text-red-700">*</span></label>
+                <input type="text" id="address1-input" name="address1-input" class="w-full @apply input__elem" value="" placeholder="Address" />
+              </div>
+
+              <div class="field mb-5">
+                <label for="address2-input" class="text-sm block mb-1 text-skin-muted">Address 2 (optional)</label>
+                <input type="text" id="address2-input" name="address2-input" class="w-full @apply input__elem" value="" placeholder="Address 2" />
+              </div>
+
+              <div class="flex gap-4 mb-5">
+                <div class="field w-full">
+                  <label for="city-input" class="text-sm block mb-1 text-skin-muted">City <span class="text-red-700">*</span></label>
+                  <input type="text" id="city-input" name="city-input" class="w-full @apply input__elem" value="" placeholder="City" />
+                </div>
+
+                <div class="field">
+                  <label for="zip-input" class="text-sm block mb-1 text-skin-muted">Zip Code <span class="text-red-700">*</span></label>
+                  <input type="text" id="zip-input" name="zip-input" class="w-full @apply input__elem" value="" placeholder="Zip Code" />
+                </div>
+              </div>
+
+              <div class="select-field mb-5">
+                <label for="country-select" class="not-floating !text-sm !text-skin-muted block mb-1"> Country/Region <span class="text-red-700">*</span> </label>
+
+                <div class="select__container" onclick="showSelectElem()">
+                  <input type="text" name="country" readonly id="country-select" class="@apply input__elem text-skin-base w-full" value="Select Country:" />
+
+                  <div class="select__options">
+                    <div class="select__option selected text-skin-muted" onclick="event.stopPropagation()">Select Country:</div>
+                    <div class="select__option">Bangladesh</div>
+                    <div class="select__option">United States</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field flex gap-5 mt-9">
+                <button data-previous class="@apply filled__btn !text-skin-hover !bg-skin-button-inverted hover:!bg-skin-button-inverted-hover" type="button">Back</button>
+                <button data-next class="@apply filled__btn w-full" type="button">continue</button>
+              </div>
+            </div>
+
+            <!-- step three -->
+            <div class="step-3" data-step>
+              <div class="flex justify-between gap-10 mb-6">
+                <p class="material-icons bg-skin-button-base !text-xs !font-bold text-skin-base-inverted w-6 h-6 !grid place-items-center rounded-full">check</p>
+                <p class="material-icons bg-skin-button-base !text-xs !font-bold text-skin-base-inverted w-6 h-6 !grid place-items-center rounded-full">check</p>
+                <p class="bg-skin-button-inverted-hover text-xs font-bold text-skin-base w-6 h-6 grid place-items-center rounded-full">3</p>
+              </div>
+
+              <h5 class="text-2xl font-medium text-skin-base mb-2">Create Account</h5>
+              <p class="text-skin-base mb-6">Enter company information to continue.</p>
+
+              <div class="field mb-5">
+                <label for="company-input" class="text-sm block mb-1 text-skin-muted">Company</label>
+                <input type="text" id="company-input" name="company-input" class="w-full @apply input__elem" placeholder="Company Name" />
+              </div>
+              <div class="field mb-5">
+                <label for="company-link-input" class="text-sm block mb-1 text-skin-muted">Company URL (Optional)</label>
+                <input type="text" id="company-link-input" name="company-link-input" class="w-full @apply input__elem" placeholder="Company URL" />
+              </div>
+
+              <div class="select-field mb-5 overflow-hidden">
+                <label for="business-catagory-select" class="not-floating !text-sm !text-skin-muted block mb-1 whitespace-nowrap"> What catagory best describe your business? </label>
+
+                <select id="business-catagory-select" name="business-catagory-select" class="@apply input__elem w-full">
+                  <option value="" disabled selected>Please Choose</option>
+                  <option value="Ecommerce">Ecommerce</option>
+                  <option value="Education">Education</option>
+                  <option value="Health Care">Health Care</option>
+                </select>
+              </div>
+
+              <div class="select-field mb-5 overflow-hidden">
+                <label for="account-type-select" class="not-floating !text-sm !text-skin-muted block mb-1 whitespace-nowrap"> The type of account you want to create? <span class="text-red-700">*</span> </label>
+
+                <select id="account-type-select" name="account-type-select" class="@apply input__elem w-full">
+                  <option value="" disabled selected>Please Choose</option>
+                  <option value="user">User</option>
+                  <option value="reseller">Reseller</option>
+                </select>
+              </div>
+
+              <div class="field flex gap-5 mt-9">
+                <button data-previous class="@apply filled__btn !text-skin-hover !bg-skin-button-inverted hover:!bg-skin-button-inverted-hover" type="button">Back</button>
+                <button class="@apply filled__btn w-full" type="submit">Submit</button>
               </div>
             </div>
           </form>
