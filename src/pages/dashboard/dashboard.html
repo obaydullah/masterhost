@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This short description describes my website." />
+    <meta name="keywords" content="website, blog, foo, bar" />
+    <meta name="author" content="Master Host" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../../assets/css/dashboard.css" />
+    <link rel="stylesheet" href="../../assets/css/component.css" />
+  </head>
+  <body>
+    <div class="flex">
+      <aside class="bg-skin-sidebar-fill h-screen overflow-y-scroll w-32 shrink-0">
+        <!-- logo -->
+        <a class="" href="#">
+          <svg class="w-11 h-11 mx-auto my-7" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27 0C12.0843 0 0 12.088 0 27.0084C0 27.2107 0.0337079 27.4299 0.0337079 27.6322C3.57303 21.9001 9.28652 18.444 15.691 18.5114C23.4101 18.5451 27.7247 24.0918 29.7809 27.059C31.9719 25.6597 36.2865 23.5186 40.7697 24.665C44.4101 25.5923 47.2921 28.4246 49.382 33.0946H53.2921C53.7472 31.1389 54 29.1158 54 27.0084C53.9831 12.088 41.8989 0 27 0Z" fill="#ffffff" />
+            <path d="M46.6686 35.3874C44.9832 31.1389 42.7079 28.6269 39.9102 27.9188C35.2753 26.7386 30.472 30.6668 30.4214 30.7005L29.0562 31.8301L27.9944 30.3971C27.8259 30.1779 27.6237 29.8913 27.4046 29.5541C25.7023 27.059 22.1798 21.8832 15.6574 21.8663C15.6405 21.8663 15.6068 21.8663 15.5899 21.8663C8.98321 21.8663 3.28658 26.5026 0.876465 33.7352C3.87646 45.3849 14.4102 54 26.9832 54C38.5619 54 48.4046 46.6999 52.2472 36.4495H47.0899L46.6686 35.3874Z" fill="#ffffff" />
+          </svg>
+        </a>
+        <nav class="flex flex-col text-skin-muted-inverted">
+          <a href="#" class="active__nav py-2 flex flex-col gap-1 items-center hover:text-skin-base-inverted group">
+            <img class="w-10 h-10 group-hover:scale-[120%] duration-500" src="../../assets/icons/home-icon.svg" alt="Home" />
+            <p class="text-lg font-light text-center">Home</p>
+          </a>
+          <a href="#" class="py-2 flex flex-col gap-1 items-center hover:text-skin-base-inverted group">
+            <img class="w-10 h-10 group-hover:scale-[120%] duration-500" src="../../assets/icons/users.svg" alt="Customer" />
+            <p class="text-lg font-light text-center">Client</p>
+          </a>
+          <a href="#" class="py-2 flex flex-col gap-1 items-center hover:text-skin-base-inverted group">
+            <img class="w-10 h-10 group-hover:scale-[120%] duration-500" src="../../assets/icons/dns.svg" alt="Domain" />
+            <p class="text-lg font-light text-center">Domain</p>
+          </a>
+          <a href="#" class="py-2 flex flex-col gap-1 items-center hover:text-skin-base-inverted group">
+            <img class="w-10 h-10 group-hover:scale-[120%] duration-500" src="../../assets/icons/database.svg" alt="Database" />
+            <p class="text-lg font-light text-center">Database</p>
+          </a>
+          <a href="#" class="py-2 flex flex-col gap-1 items-center hover:text-skin-base-inverted group">
+            <img class="w-10 h-10 group-hover:scale-[120%] duration-500" src="../../assets/icons/email-icon.svg" alt="Email" />
+            <p class="text-lg font-light text-center">Email</p>
+          </a>
+          <a href="#" class="py-2 flex flex-col gap-1 items-center hover:text-skin-base-inverted group">
+            <img class="w-10 h-10 group-hover:scale-[120%] duration-500" src="../../assets/icons/tools.svg" alt="Tools" />
+            <p class="text-lg font-light text-center">Tools</p>
+          </a>
+          <a href="#" class="py-2 flex flex-col gap-1 items-center hover:text-skin-base-inverted group">
+            <img class="w-10 h-10 group-hover:scale-[120%] duration-500" src="../../assets/icons/application.svg" alt="Application" />
+            <p class="text-lg font-light text-center">Application</p>
+          </a>
+          <a href="#" class="py-2 flex flex-col gap-1 items-center hover:text-skin-base-inverted group">
+            <img class="w-10 h-10 group-hover:scale-[120%] duration-500" src="../../assets/icons/account.svg" />
+            <p class="text-lg font-light text-center">Account</p>
+          </a>
+          <a href="#" class="py-2 flex flex-col gap-1 items-center hover:text-skin-base-inverted group">
+            <img class="w-10 h-10 group-hover:scale-[120%] duration-500" src="../../assets/icons/package.svg" alt="Package" />
+            <p class="text-lg font-light text-center">Package</p>
+          </a>
+          <a href="#" class="py-2 flex flex-col gap-1 items-center hover:text-skin-base-inverted group">
+            <img class="w-10 h-10 group-hover:scale-[120%] duration-500" src="../../assets/icons/billing.svg" alt="Billing" />
+            <p class="text-lg font-light text-center">Billing</p>
+          </a>
+        </nav>
+      </aside>
+
+      <main class="flex-grow h-screen overflow-y-scroll">
+        <!-- header  -->
+        <header class="w-full border-b border-b-skin-muted h-10 bg-skin-muted">
+          <div class="container h-full flex items-center justify-between w-full">
+            <div class="news flex gap-2">
+              <p class="text-sm font-extrabold text-skin-hover">LXROOT</p>
+              <p class="text-sm font-normal text-skin-muted">Your Cloud Hosting Management Solution.</p>
+            </div>
+
+            <div class="h-full flex gap-4 items-center">
+              <button class="menu-btn h-full flex gap-[2px] items-center m text-skin-muted hover:text-skin-base hover:bg-skin-button-inverted-hover">
+                <img class="h-4 w-4 rounded-full mr-2" src="../../assets/icons/usa_flag_icon_round.png" alt="" />
+                English (US)
+              </button>
+
+              <button class="h-full flex justify-center items-center text-skin-muted">
+                <span class="material-icons"> email </span>
+              </button>
+
+              <div class="notification">
+                <button class="menu-btn h-full flex justify-center items-center relative">
+                  <span class="material-icons text-skin-muted"> notifications_none </span>
+
+                  <span class="absolute top-[-6px] -right-1 w-4 h-4 bg-skin-sidebar-fill text-skin-base-inverted rounded-full text-xs flex items-center justify-center">1</span>
+                </button>
+              </div>
+
+              <div class="h-full">
+                <button class="menu-btn h-full flex gap-1 px-2 items-center hover:bg-skin-button-inverted-hover group">
+                  <span class="material-icons text-skin-muted group-hover:text-skin-base"> account_circle </span>
+
+                  <span class="text-skin-muted group-hover:text-skin-base">MD Mostain Billah</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="fill-skin-base" d="M12.0002 15.552L7.34424 10.896L8.01624 10.224L12.0002 14.208L15.9842 10.224L16.6562 10.896L12.0002 15.552Z" fill="black" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- message  -->
+        <div class="container mt-12 mb-10">
+          <div class="px-5 py-3 border border-l-4 border-skin-muted border-l-skin-base shadow-md text-skin-base">
+            <p class="text-sm inline">
+              Introducing Vultr Cloud GPUs powered by the NVIDIA A40.
+              <a href="" class="font-bold underline text-skin-message">Provision your instance now.</a>
+            </p>
+
+            <button class="p-1 menu-btn rounded-full text-left sm:float-right text-skin-base hover:text-skin-hover hover:bg-skin-button-inverted-hover">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="stroke-skin-base" d="M20 20L4 4M20 4L4 20" stroke="black" stroke-width="2" stroke-linecap="round"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- card  -->
+        <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-10">
+          <div class="card border border-skin-muted shadow-md rounded bg-skin-base h-fit">
+            <div class="flex gap-2 xl:gap-5 justify-between items-center p-4 sm:p-6">
+              <div class="flex items-start gap-5">
+                <img class="w-12 h-12" src="../../assets/icons/dns.svg" alt="" />
+                <div class="">
+                  <p class="text-lg text-skin-base mb-1">Domain</p>
+                  <p class="text-sm text-skin-muted">All Domains</p>
+                </div>
+              </div>
+
+              <p class="text-3xl text-skin-muted font-normal">40%</p>
+            </div>
+          </div>
+          <div class="card border border-skin-muted shadow-md rounded bg-skin-base h-fit">
+            <div class="flex gap-2 xl:gap-5 justify-between items-center p-4 sm:p-6">
+              <div class="flex items-start gap-5">
+                <img class="w-12 h-12" src="../../assets/icons/dns.svg" alt="" />
+                <div class="">
+                  <p class="text-lg text-skin-base mb-1">Domain</p>
+                  <p class="text-sm text-skin-muted">All Domains</p>
+                </div>
+              </div>
+
+              <p class="text-3xl text-skin-muted font-normal">40%</p>
+            </div>
+          </div>
+          <div class="card border border-skin-muted shadow-md rounded bg-skin-base h-fit">
+            <div class="flex gap-2 xl:gap-5 justify-between items-center p-4 sm:p-6">
+              <div class="flex items-start gap-5">
+                <img class="w-12 h-12" src="../../assets/icons/dns.svg" alt="" />
+                <div class="">
+                  <p class="text-lg text-skin-base mb-1">Domain</p>
+                  <p class="text-sm text-skin-muted">All Domains</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card big  -->
+        <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-10">
+          <div class="border border-skin-muted shadow-md rounded bg-skin-base h-fit">
+            <div class="flex gap-5 justify-between items-start p-4 sm:p-6 bg-skin-muted">
+              <div class="flex items-start gap-5">
+                <img class="w-12 h-12" src="../../assets/icons/database.svg" alt="" />
+                <div class="">
+                  <p class="text-lg text-skin-base mb-1">Database</p>
+                  <p class="text-sm text-skin-muted">All Database</p>
+                </div>
+              </div>
+              <div>
+                <span class="material-icons cursor-pointer text-skin-muted !text-2xl"> more_vert </span>
+              </div>
+            </div>
+
+            <hr class="w-full border-b border-b-skin-muted/50" />
+
+            <div class="p-4 sm:p-6">
+              <div class="flex items-center justify-between gap-4 p-2 px-3 mb-4 rounded-md bg-skin-muted hover:bg-skin-amplify hover:shadow duration-300">
+                <p class="text-skin-muted">Domain</p>
+                <p class="text-skin-muted font-medium">Shamim.app</p>
+              </div>
+
+              <div class="flex items-center justify-between gap-4 p-2 px-3 mb-4 rounded-md bg-skin-muted hover:bg-skin-amplify hover:shadow duration-300">
+                <p class="text-skin-muted">Status</p>
+                <button class="flex gap-2 items-center">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="fill-skin-hover" d="M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5ZM12 20.7188C7.18594 20.7188 3.28125 16.8141 3.28125 12C3.28125 7.18594 7.18594 3.28125 12 3.28125C16.8141 3.28125 20.7188 7.18594 20.7188 12C20.7188 16.8141 16.8141 20.7188 12 20.7188Z" fill="black"></path>
+                    <path class="fill-skin-hover" d="M16.8609 11.6977L9.9211 6.65859C9.86544 6.61779 9.79954 6.59324 9.73075 6.58769C9.66197 6.58214 9.59299 6.5958 9.53151 6.62715C9.47002 6.6585 9.41846 6.7063 9.38255 6.76524C9.34664 6.82417 9.3278 6.89192 9.32813 6.96093V17.0391C9.32813 17.3461 9.675 17.5195 9.9211 17.3414L16.8609 12.3023C16.9089 12.2678 16.9479 12.2224 16.9748 12.1698C17.0017 12.1173 17.0157 12.0591 17.0157 12C17.0157 11.9409 17.0017 11.8827 16.9748 11.8302C16.9479 11.7776 16.9089 11.7322 16.8609 11.6977V11.6977ZM10.8234 14.8383V9.16171L14.7305 12L10.8234 14.8383V14.8383Z" fill="black"></path>
+                  </svg>
+                  <p class="text-skin-muted">Running</p>
+                </button>
+              </div>
+
+              <div class="flex items-center justify-between gap-4 p-2 px-3 mb-4 rounded-md bg-skin-muted hover:bg-skin-amplify hover:shadow duration-300">
+                <p class="text-skin-muted">Disk Used</p>
+                <p class="text-skin-muted font-medium">5.2GB</p>
+              </div>
+            </div>
+          </div>
+          <div class="border border-skin-muted shadow-md rounded bg-skin-base h-fit">
+            <div class="flex gap-5 justify-between items-start p-4 sm:p-6 bg-skin-muted">
+              <div class="flex items-start gap-5">
+                <img class="w-12 h-12" src="../../assets/icons/tools.svg" alt="" />
+                <div class="">
+                  <p class="text-lg text-skin-base mb-1">Tools</p>
+                  <p class="text-sm text-skin-muted">All Tools</p>
+                </div>
+              </div>
+              <div>
+                <span class="material-icons cursor-pointer text-skin-muted !text-2xl"> more_vert </span>
+              </div>
+            </div>
+
+            <hr class="w-full border-b border-b-skin-muted/50" />
+
+            <div class="p-4 sm:p-6">
+              <div class="flex items-center justify-between gap-4 p-2 px-3 mb-4 rounded-md bg-skin-muted hover:bg-skin-amplify hover:shadow duration-300">
+                <p class="text-skin-muted">Domain</p>
+                <p class="text-skin-muted font-medium">Shamim.app</p>
+              </div>
+
+              <div class="flex items-center justify-between gap-4 p-2 px-3 mb-4 rounded-md bg-skin-muted hover:bg-skin-amplify hover:shadow duration-300">
+                <p class="text-skin-muted">Status</p>
+                <button class="flex gap-2 items-center">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="fill-skin-hover" d="M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5ZM12 20.7188C7.18594 20.7188 3.28125 16.8141 3.28125 12C3.28125 7.18594 7.18594 3.28125 12 3.28125C16.8141 3.28125 20.7188 7.18594 20.7188 12C20.7188 16.8141 16.8141 20.7188 12 20.7188Z" fill="black"></path>
+                    <path class="fill-skin-hover" d="M16.8609 11.6977L9.9211 6.65859C9.86544 6.61779 9.79954 6.59324 9.73075 6.58769C9.66197 6.58214 9.59299 6.5958 9.53151 6.62715C9.47002 6.6585 9.41846 6.7063 9.38255 6.76524C9.34664 6.82417 9.3278 6.89192 9.32813 6.96093V17.0391C9.32813 17.3461 9.675 17.5195 9.9211 17.3414L16.8609 12.3023C16.9089 12.2678 16.9479 12.2224 16.9748 12.1698C17.0017 12.1173 17.0157 12.0591 17.0157 12C17.0157 11.9409 17.0017 11.8827 16.9748 11.8302C16.9479 11.7776 16.9089 11.7322 16.8609 11.6977V11.6977ZM10.8234 14.8383V9.16171L14.7305 12L10.8234 14.8383V14.8383Z" fill="black"></path>
+                  </svg>
+                  <p class="text-skin-muted">Running</p>
+                </button>
+              </div>
+
+              <div class="flex items-center justify-between gap-4 p-2 px-3 mb-4 rounded-md bg-skin-muted hover:bg-skin-amplify hover:shadow duration-300">
+                <p class="text-skin-muted">Disk Used</p>
+                <p class="text-skin-muted font-medium">5.2GB</p>
+              </div>
+            </div>
+          </div>
+          <div class="border border-skin-muted shadow-md rounded bg-skin-base h-fit">
+            <div class="flex gap-5 justify-between items-start p-4 sm:p-6 bg-skin-muted">
+              <div class="flex items-start gap-5">
+                <img class="w-12 h-12" src="../../assets/icons/package.svg" alt="" />
+                <div class="">
+                  <p class="text-lg text-skin-base mb-1">Package</p>
+                  <p class="text-sm text-skin-muted">All packages</p>
+                </div>
+              </div>
+              <div>
+                <span class="material-icons cursor-pointer text-skin-muted !text-2xl"> more_vert </span>
+              </div>
+            </div>
+
+            <hr class="w-full border-b border-b-skin-muted/50" />
+
+            <div class="p-4 sm:p-6">
+              <div class="flex items-center justify-between gap-4 p-2 px-3 mb-4 rounded-md bg-skin-muted hover:bg-skin-amplify hover:shadow duration-300">
+                <p class="text-skin-muted">Domain</p>
+                <p class="text-skin-muted font-medium">Shamim.app</p>
+              </div>
+
+              <div class="flex items-center justify-between gap-4 p-2 px-3 mb-4 rounded-md bg-skin-muted hover:bg-skin-amplify hover:shadow duration-300">
+                <p class="text-skin-muted">Status</p>
+                <button class="flex gap-2 items-center">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="fill-skin-hover" d="M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5ZM12 20.7188C7.18594 20.7188 3.28125 16.8141 3.28125 12C3.28125 7.18594 7.18594 3.28125 12 3.28125C16.8141 3.28125 20.7188 7.18594 20.7188 12C20.7188 16.8141 16.8141 20.7188 12 20.7188Z" fill="black"></path>
+                    <path class="fill-skin-hover" d="M16.8609 11.6977L9.9211 6.65859C9.86544 6.61779 9.79954 6.59324 9.73075 6.58769C9.66197 6.58214 9.59299 6.5958 9.53151 6.62715C9.47002 6.6585 9.41846 6.7063 9.38255 6.76524C9.34664 6.82417 9.3278 6.89192 9.32813 6.96093V17.0391C9.32813 17.3461 9.675 17.5195 9.9211 17.3414L16.8609 12.3023C16.9089 12.2678 16.9479 12.2224 16.9748 12.1698C17.0017 12.1173 17.0157 12.0591 17.0157 12C17.0157 11.9409 17.0017 11.8827 16.9748 11.8302C16.9479 11.7776 16.9089 11.7322 16.8609 11.6977V11.6977ZM10.8234 14.8383V9.16171L14.7305 12L10.8234 14.8383V14.8383Z" fill="black"></path>
+                  </svg>
+                  <p class="text-skin-muted">Running</p>
+                </button>
+              </div>
+
+              <div class="flex items-center justify-between gap-4 p-2 px-3 mb-4 rounded-md bg-skin-muted hover:bg-skin-amplify hover:shadow duration-300">
+                <p class="text-skin-muted">Disk Used</p>
+                <p class="text-skin-muted font-medium">5.2GB</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card host  -->
+        <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-10">
+          <div class="border border-skin-muted shadow-md rounded bg-skin-base">
+            <div class="p-4 sm:p-6 bg-skin-muted">
+              <p class="text-xl text-skin-muted font-medium mb-[0.375rem]">host.mateors.com</p>
+              <p class="text-sm font-normal text-skin-muted">2048.00 MB Regular Cloud Compute - 207.148.125.59</p>
+            </div>
+            <hr class="w-full border-b border-b-skin-muted/50" />
+
+            <div class="p-4 sm:p-6">
+              <div class="flex items-center justify-between gap-4 p-2 px-3 mb-4 rounded-md bg-skin-muted hover:bg-skin-amplify hover:shadow transition">
+                <p class="text-skin-muted font-medium">OS</p>
+                <img src="../../assets/images/Clojure_logo.png" alt="" class="w-6" />
+              </div>
+
+              <div class="flex items-center justify-between gap-4 p-2 px-3 mb-4 rounded-md bg-skin-muted hover:bg-skin-amplify hover:shadow transition">
+                <p class="text-skin-muted font-medium">Location</p>
+                <div class="flex gap-3 items-center">
+                  <img src="../../assets/images/emojione_flag-for-singapore.png" alt="" class="w-6 mt-2" />
+                  <p class="text-skin-muted">Singapore</p>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between gap-4 p-2 px-3 mb-4 rounded-md bg-skin-muted hover:bg-skin-amplify hover:shadow transition">
+                <p class="text-skin-muted font-medium">Charges</p>
+                <p class="text-skin-muted font-bold">$10.47</p>
+              </div>
+
+              <div class="flex items-center justify-between gap-4 p-2 px-3 mb-4 rounded-md bg-skin-muted hover:bg-skin-amplify hover:shadow transition">
+                <p class="text-skin-muted font-medium">Status</p>
+                <button class="flex gap-2 items-center">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="fill-skin-hover" d="M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5ZM12 20.7188C7.18594 20.7188 3.28125 16.8141 3.28125 12C3.28125 7.18594 7.18594 3.28125 12 3.28125C16.8141 3.28125 20.7188 7.18594 20.7188 12C20.7188 16.8141 16.8141 20.7188 12 20.7188Z" fill="black"></path>
+                    <path class="fill-skin-hover" d="M16.8609 11.6977L9.9211 6.65859C9.86544 6.61779 9.79954 6.59324 9.73075 6.58769C9.66197 6.58214 9.59299 6.5958 9.53151 6.62715C9.47002 6.6585 9.41846 6.7063 9.38255 6.76524C9.34664 6.82417 9.3278 6.89192 9.32813 6.96093V17.0391C9.32813 17.3461 9.675 17.5195 9.9211 17.3414L16.8609 12.3023C16.9089 12.2678 16.9479 12.2224 16.9748 12.1698C17.0017 12.1173 17.0157 12.0591 17.0157 12C17.0157 11.9409 17.0017 11.8827 16.9748 11.8302C16.9479 11.7776 16.9089 11.7322 16.8609 11.6977V11.6977ZM10.8234 14.8383V9.16171L14.7305 12L10.8234 14.8383V14.8383Z" fill="black"></path>
+                  </svg>
+                  <p class="text-skin-muted">Running</p>
+                </button>
+              </div>
+
+              <div class="flex gap-2 xl:gap-5 justify-center mt-10">
+                <button type="button" class="menu-btn flex justify-center items-center !w-12 h-12 border border-skin-muted bg-skin-base hover:bg-skin-button-inverted-hover rounded-full shadow-sm">
+                  <img src="../../assets/icons/info_black_24dp.svg" alt="info" />
+                </button>
+
+                <button type="button" class="menu-btn active-function flex justify-center items-center !w-12 h-12 border border-skin-muted bg-skin-base hover:bg-skin-button-inverted-hover rounded-full shadow-sm">
+                  <img src="../../assets/icons/stop_circle_black_24dp.svg" alt="stop" />
+                </button>
+
+                <button type="button" class="menu-btn flex justify-center items-center !w-12 h-12 border border-skin-muted bg-skin-base hover:bg-skin-button-inverted-hover rounded-full shadow-sm">
+                  <img src="../../assets/icons/restart_alt_black_24dp.svg" alt="Restart" />
+                </button>
+
+                <button type="button" class="menu-btn flex justify-center items-center !w-12 h-12 border border-skin-muted bg-skin-base hover:bg-skin-button-inverted-hover rounded-full shadow-sm">
+                  <img src="../../assets/icons/delete_black_24dp.svg" alt="delete" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="../../assets/js/dashboard.js"></script>
+  </body>
+</html>

@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "account": "npx tailwindcss -i ./tailwindcss/account.css -o ./src/assets/css/account.css --watch",
-    "component": "npx tailwindcss -i ./tailwindcss/component.css -o ./src/assets/css/component.css --watch"
+    "component": "npx tailwindcss -i ./tailwindcss/component.css -o ./src/assets/css/component.css --watch",
+    "dashboard": "npx tailwindcss -i ./tailwindcss/dashboard.css -o ./src/assets/css/dashboard.css --watch",
+    "clients": "npx tailwindcss -i ./tailwindcss/clients.css -o ./src/assets/css/clients.css --watch"
   },
   "keywords": [],
   "author": "",

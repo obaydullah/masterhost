@@ -130,7 +130,7 @@ module.exports = {
       xl: "36rem", //576px
       "2xl": "42rem", //672px
       "3xl": "48rem", //768px
-      container: "1920px", // Maximum container width
+      "4xl": "80rem", // 1280px
     },
 
     boxShadow: {

@@ -36,19 +36,21 @@ body {
   font-family: "Roboto";
 }
 
-[data-multi-step] {
-  overflow: hidden;
+aside::-webkit-scrollbar {
+  display: none;
+}
+.active__nav {
   position: relative;
+  background-color: #1f2937;
 }
-
-[data-multi-step] [data-step] {
-  display: none;
-}
-
-[data-multi-step] [data-step].active-form {
-  display: block;
-}
-
-[data-multi-step] .hide-form {
-  display: none;
+.active__nav::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background-color: white;
+  clip-path: polygon(40% 48%, 100% 100%, 100% 0);
 }

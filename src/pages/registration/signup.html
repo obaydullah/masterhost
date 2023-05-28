@@ -140,15 +140,12 @@
               <div class="select-field mb-5">
                 <label for="country-select" class="not-floating !text-sm !text-skin-muted block mb-1"> Country/Region <span class="text-red-700">*</span> </label>
 
-                <div class="select__container" onclick="showSelectElem()">
-                  <input type="text" name="country" readonly id="country-select" class="@apply input__elem text-skin-base w-full" value="Select Country:" />
-
-                  <div class="select__options">
-                    <div class="select__option selected text-skin-muted" onclick="event.stopPropagation()">Select Country:</div>
-                    <div class="select__option">Bangladesh</div>
-                    <div class="select__option">United States</div>
-                  </div>
-                </div>
+                <select id="country-select" name="country-select" class="@apply input__elem w-full">
+                  <option value="Not Selected" disabled selected>Select Country :</option>
+                  <option value="Bangladesh">Bangladesh</option>
+                  <option value="United State">United State</option>
+                  <option value="India">India</option>
+                </select>
               </div>
 
               <div class="field flex gap-5 mt-9">
