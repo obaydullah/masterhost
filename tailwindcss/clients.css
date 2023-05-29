@@ -100,7 +100,12 @@ input[type="checkbox"]::after {
 input[type="checkbox"]:hover {
   border: 2px solid #374151;
 }
-
+input[type="checkbox"]:checked {
+  display: grid !important;
+}
+input[type="checkbox"]:checked ~ .material-icons {
+  display: none;
+}
 input[type="checkbox"]:checked::before {
   display: block;
 }
